@@ -44,14 +44,14 @@ import forms.resident.properties.gain.WorthWhenGiftedForm._
 import models.resident._
 import models.resident.properties._
 import models.resident.properties.gain.{OwnerBeforeLegislationStartModel, WhoDidYouGiveItToModel, WorthWhenGiftedModel}
+import play.api.Play.current
 import play.api.data.Form
 import play.api.i18n.Messages
+import play.api.i18n.Messages.Implicits._
 import play.api.mvc.{Action, AnyContent, Result}
 import uk.gov.hmrc.play.http.{HeaderCarrier, SessionKeys}
 import views.html.calculation.{resident => commonViews}
 import views.html.calculation.resident.properties.{gain => views}
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 import scala.concurrent.Future
 

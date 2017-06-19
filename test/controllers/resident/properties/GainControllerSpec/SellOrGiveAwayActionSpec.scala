@@ -16,20 +16,20 @@
 
 package controllers.GainControllerSpec
 
+import assets.MessageLookup.{PropertiesSellOrGiveAway => messages}
 import config.AppConfig
 import connectors.CalculatorConnector
-import controllers.helpers.FakeRequestHelper
 import controllers.GainController
+import controllers.helpers.FakeRequestHelper
 import models.resident.properties.SellOrGiveAwayModel
 import org.jsoup.Jsoup
 import org.mockito.ArgumentMatchers
-import org.scalatest.mock.MockitoSugar
 import org.mockito.Mockito._
-import play.api.test.Helpers._
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import assets.MessageLookup.{PropertiesSellOrGiveAway => messages}
+import org.scalatest.mock.MockitoSugar
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import play.api.test.Helpers._
 import uk.gov.hmrc.http.cache.client.CacheMap
+import uk.gov.hmrc.play.test.UnitSpec
 
 import scala.concurrent.Future
 

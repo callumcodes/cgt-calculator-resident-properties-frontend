@@ -24,7 +24,7 @@ import models.resident.properties.{ChargeableGainAnswers, PropertyLivedInModel, 
 import org.jsoup.Jsoup
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.i18n.Messages.Implicits.applicationMessages
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 import views.html.{helpers => views}
 
 class DeductionsSummaryPartialViewSpec extends UnitSpec with GuiceOneAppPerSuite with FakeRequestHelper {

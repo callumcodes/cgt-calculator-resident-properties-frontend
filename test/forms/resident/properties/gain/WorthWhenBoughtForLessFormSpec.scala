@@ -21,7 +21,7 @@ import controllers.helpers.FakeRequestHelper
 import forms.resident.properties.WorthWhenBoughtForLessForm._
 import models.resident.properties.WorthWhenBoughtForLessModel
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 
 class WorthWhenBoughtForLessFormSpec extends UnitSpec with GuiceOneAppPerSuite with FakeRequestHelper {
 

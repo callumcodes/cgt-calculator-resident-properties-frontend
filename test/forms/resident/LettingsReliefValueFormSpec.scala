@@ -16,13 +16,12 @@
 
 package forms.resident
 
-import assets.MessageLookup.{Resident => messages}
-import assets.MessageLookup.{LettingsReliefValue => Messages}
+import assets.MessageLookup.{LettingsReliefValue => Messages, Resident => messages}
 import controllers.helpers.FakeRequestHelper
 import forms.resident.properties.LettingsReliefValueForm._
 import models.resident.properties.LettingsReliefValueModel
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 
 class LettingsReliefValueFormSpec extends UnitSpec with GuiceOneAppPerSuite with FakeRequestHelper {
 

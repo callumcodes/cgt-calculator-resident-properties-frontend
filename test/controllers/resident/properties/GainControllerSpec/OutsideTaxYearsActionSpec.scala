@@ -16,19 +16,19 @@
 
 package controllers.GainControllerSpec
 
-import controllers.helpers.FakeRequestHelper
-import controllers.GainController
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import play.api.test.Helpers._
 import assets.MessageLookup.{OutsideTaxYears => messages}
 import config.AppConfig
 import connectors.CalculatorConnector
+import controllers.GainController
+import controllers.helpers.FakeRequestHelper
 import models.resident.{DisposalDateModel, TaxYearModel}
 import org.jsoup.Jsoup
-import org.scalatest.mock.MockitoSugar
 import org.mockito.ArgumentMatchers
 import org.mockito.Mockito._
+import org.scalatest.mock.MockitoSugar
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import play.api.test.Helpers._
+import uk.gov.hmrc.play.test.UnitSpec
 
 class OutsideTaxYearsActionSpec extends UnitSpec with GuiceOneAppPerSuite with FakeRequestHelper with MockitoSugar{
 

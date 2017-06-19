@@ -16,20 +16,20 @@
 
 package controllers.GainControllerSpec
 
-import config.{AppConfig, ApplicationConfig}
-import connectors.CalculatorConnector
-import controllers.helpers.FakeRequestHelper
-import controllers.GainController
-import org.mockito.ArgumentMatchers
-import org.scalatest.mock.MockitoSugar
-import org.mockito.Mockito._
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import assets.MessageLookup.{NoTaxToPay => messages}
 import common.KeystoreKeys.ResidentPropertyKeys
+import config.{AppConfig, ApplicationConfig}
+import connectors.CalculatorConnector
+import controllers.GainController
+import controllers.helpers.FakeRequestHelper
 import models.resident.properties.gain.WhoDidYouGiveItToModel
 import org.jsoup.Jsoup
+import org.mockito.ArgumentMatchers
+import org.mockito.Mockito._
+import org.scalatest.mock.MockitoSugar
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.test.Helpers._
+import uk.gov.hmrc.play.test.UnitSpec
 
 import scala.concurrent.Future
 

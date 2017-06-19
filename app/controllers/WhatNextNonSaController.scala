@@ -18,12 +18,12 @@ package controllers
 
 import config.{AppConfig, ApplicationConfig}
 import controllers.predicates.ValidActiveSession
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
 import play.api.mvc.{Action, AnyContent}
 import views.html.calculation.resident.properties.{whatNext => views}
 
 import scala.concurrent.Future
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 object WhatNextNonSaController extends WhatNextNonSaController {
   override val applicationConfig: AppConfig = ApplicationConfig

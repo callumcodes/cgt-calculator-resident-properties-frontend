@@ -16,10 +16,10 @@
 
 package forms.resident
 
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import forms.resident.LossesBroughtForwardForm._
 import assets.MessageLookup.{LossesBroughtForward => messages}
+import forms.resident.LossesBroughtForwardForm._
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import uk.gov.hmrc.play.test.UnitSpec
 
 class LossesBroughtForwardFormSpec extends UnitSpec with GuiceOneAppPerSuite {
 

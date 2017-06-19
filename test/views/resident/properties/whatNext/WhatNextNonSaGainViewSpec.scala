@@ -16,14 +16,13 @@
 
 package views.resident.properties.whatNext
 
+import assets.MessageLookup.{WhatNextNonSaGain => messages}
 import controllers.helpers.FakeRequestHelper
 import org.jsoup.Jsoup
+import play.api.Play.current
 import play.api.i18n.Messages.Implicits.applicationMessages
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import views.html.calculation.resident.properties.{whatNext => views}
-import assets.MessageLookup.{WhatNextNonSaGain => messages}
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import play.api.Play.current
 
 class WhatNextNonSaGainViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

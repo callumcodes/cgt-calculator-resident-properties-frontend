@@ -16,12 +16,12 @@
 
 package forms.resident
 
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import models.resident.DisposalCostsModel
-import forms.resident.DisposalCostsForm._
 import assets.MessageLookup.{Resident => messages}
 import controllers.helpers.FakeRequestHelper
+import forms.resident.DisposalCostsForm._
+import models.resident.DisposalCostsModel
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import uk.gov.hmrc.play.test.UnitSpec
 
 class DisposalCostsFormSpec extends UnitSpec with GuiceOneAppPerSuite with FakeRequestHelper {
 

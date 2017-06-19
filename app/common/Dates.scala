@@ -18,7 +18,6 @@ package common
 
 import java.time._
 import java.time.format.{DateTimeFormatter, ResolverStyle}
-import java.time.temporal.ChronoUnit
 
 import scala.concurrent.Future
 

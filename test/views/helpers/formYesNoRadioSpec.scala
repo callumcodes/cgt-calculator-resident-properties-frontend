@@ -16,14 +16,13 @@
 
 package views.helpers
 
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import org.jsoup.Jsoup
-import views.html.helpers._
 import assets.MessageLookup.{NonResident => messages}
 import forms.resident.LossesBroughtForwardForm
-import org.scalatestplus.play.OneAppPerSuite
-import play.api.i18n.Messages.Implicits._
+import org.jsoup.Jsoup
 import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
+import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import views.html.helpers._
 
 class formYesNoRadioSpec extends UnitSpec with WithFakeApplication {
 

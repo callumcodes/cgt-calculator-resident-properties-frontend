@@ -16,16 +16,15 @@
 
 package views.resident.properties.gain
 
+import assets.MessageLookup.{PropertiesSellOrGiveAway => messages, Resident => commonMessages}
 import controllers.helpers.FakeRequestHelper
+import forms.resident.properties.SellOrGiveAwayForm._
 import org.jsoup.Jsoup
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
+import play.api.mvc.Call
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import views.html.calculation.resident.properties.{gain => views}
-import assets.MessageLookup.{PropertiesSellOrGiveAway => messages}
-import assets.MessageLookup.{Resident => commonMessages}
-import play.api.mvc.Call
-import forms.resident.properties.SellOrGiveAwayForm._
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 class SellOrGiveAwayViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

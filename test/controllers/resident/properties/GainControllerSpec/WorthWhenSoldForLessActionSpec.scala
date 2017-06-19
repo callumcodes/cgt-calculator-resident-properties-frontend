@@ -17,20 +17,20 @@
 package controllers.GainControllerSpec
 
 import assets.MessageLookup
-import controllers.helpers.FakeRequestHelper
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import common.KeystoreKeys.{ResidentPropertyKeys => keystoreKeys}
-import connectors.CalculatorConnector
-import org.mockito.ArgumentMatchers
 import config.AppConfig
+import connectors.CalculatorConnector
 import controllers.GainController
+import controllers.helpers.FakeRequestHelper
 import models.resident.WorthWhenSoldForLessModel
-import org.scalatest.mock.MockitoSugar
-import org.mockito.Mockito._
 import org.jsoup.Jsoup
+import org.mockito.ArgumentMatchers
+import org.mockito.Mockito._
+import org.scalatest.mock.MockitoSugar
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.test.Helpers._
 import uk.gov.hmrc.http.cache.client.CacheMap
+import uk.gov.hmrc.play.test.UnitSpec
 
 import scala.concurrent.Future
 

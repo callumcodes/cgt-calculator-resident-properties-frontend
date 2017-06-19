@@ -16,17 +16,16 @@
 
 package views.resident.properties.gain
 
-import assets.MessageLookup.{Resident => commonMessages}
 import assets.MessageLookup.Resident.Properties.{PropertiesWorthWhenGaveAway => messages}
+import assets.MessageLookup.{Resident => commonMessages}
 import controllers.helpers.FakeRequestHelper
+import controllers.routes
 import forms.resident.properties.WorthWhenGaveAwayForm._
 import org.jsoup.Jsoup
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import views.html.calculation.resident.properties.{gain => views}
-import controllers.routes
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 class WorthWhenGaveAwayViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

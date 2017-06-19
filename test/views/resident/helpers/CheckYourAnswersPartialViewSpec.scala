@@ -16,20 +16,20 @@
 
 package views.resident.helpers
 
-import controllers.helpers.FakeRequestHelper
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import org.jsoup.Jsoup
-import play.api.i18n.Messages.Implicits._
-import views.html.helpers.checkYourAnswersPartial
 import assets.MessageLookup.NonResident.{ReviewAnswers => messages}
 import assets.MessageLookup.Resident.{Properties => propertiesMessages}
 import assets.MessageLookup.{Resident => residentMessages}
-import assets.{MessageLookup => commonMessages}
 import assets.ModelsAsset._
+import assets.{MessageLookup => commonMessages}
+import controllers.helpers.FakeRequestHelper
 import controllers.routes
+import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import play.api.i18n.Messages.Implicits._
 import play.twirl.api.HtmlFormat
+import uk.gov.hmrc.play.test.UnitSpec
+import views.html.helpers.checkYourAnswersPartial
 
 class CheckYourAnswersPartialViewSpec extends UnitSpec with GuiceOneAppPerSuite with FakeRequestHelper {
 

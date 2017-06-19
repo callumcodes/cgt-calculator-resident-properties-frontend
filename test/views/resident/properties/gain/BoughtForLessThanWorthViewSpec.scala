@@ -16,16 +16,15 @@
 
 package views.resident.properties.gain
 
+import assets.MessageLookup.{BoughtForLessThanWorth => messages, Resident => commonMessages}
 import controllers.helpers.FakeRequestHelper
-import org.jsoup.Jsoup
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import views.html.calculation.resident.properties.{gain => views}
-import assets.MessageLookup.{BoughtForLessThanWorth => messages}
-import assets.MessageLookup.{Resident => commonMessages}
 import forms.resident.properties.BoughtForLessThanWorthForm._
 import models.resident.properties.BoughtForLessThanWorthModel
-import play.api.i18n.Messages.Implicits._
+import org.jsoup.Jsoup
 import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
+import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import views.html.calculation.resident.properties.{gain => views}
 
 class BoughtForLessThanWorthViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

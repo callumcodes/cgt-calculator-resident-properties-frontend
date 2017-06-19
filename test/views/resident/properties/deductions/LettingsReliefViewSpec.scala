@@ -16,16 +16,14 @@
 
 package views.resident.properties.deductions
 
-import assets.MessageLookup.{Resident => commonMessages}
-import assets.MessageLookup.{LettingsRelief => messages}
+import assets.MessageLookup.{LettingsRelief => messages, Resident => commonMessages}
 import controllers.helpers.FakeRequestHelper
 import forms.resident.properties.LettingsReliefForm._
 import org.jsoup.Jsoup
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import views.html.calculation.resident.properties.{deductions => views}
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 class LettingsReliefViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

@@ -16,17 +16,17 @@
 
 package controllers
 
-import controllers.predicates.ValidActiveSession
-import play.api.mvc.{Action, AnyContent}
-import common.Dates._
 import java.time._
 
+import common.Dates._
 import common.KeystoreKeys
 import config.{AppConfig, ApplicationConfig}
 import connectors.CalculatorConnector
+import controllers.predicates.ValidActiveSession
 import models.resident.DisposalDateModel
-import play.api.i18n.Messages.Implicits._
 import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
+import play.api.mvc.{Action, AnyContent}
 import uk.gov.hmrc.play.http.HeaderCarrier
 
 import scala.concurrent.Future

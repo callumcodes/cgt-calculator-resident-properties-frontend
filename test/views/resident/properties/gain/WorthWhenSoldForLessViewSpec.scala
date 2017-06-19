@@ -16,17 +16,15 @@
 
 package views.resident.properties.gain
 
-import assets.MessageLookup.{Resident => commonMessages}
 import assets.MessageLookup.Resident.Properties.{WorthWhenSoldForLess => messages}
-import assets.MessageLookup.Resident.Shares.WorthWhenSoldForLess
+import assets.MessageLookup.{Resident => commonMessages}
 import controllers.helpers.FakeRequestHelper
 import forms.resident.WorthWhenSoldForLessForm._
+import org.jsoup.Jsoup
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import views.html.calculation.resident.properties.{gain => views}
-import org.jsoup.Jsoup
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 class WorthWhenSoldForLessViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

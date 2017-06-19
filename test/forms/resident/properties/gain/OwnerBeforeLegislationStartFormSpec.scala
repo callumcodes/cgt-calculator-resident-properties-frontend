@@ -16,11 +16,11 @@
 
 package forms.resident.properties.gain
 
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import models.resident.properties.gain.OwnerBeforeLegislationStartModel
-import forms.resident.properties.gain.OwnerBeforeLegislationStartForm._
 import assets.MessageLookup.Resident.Properties.{OwnerBeforeLegislationStart => messages}
+import forms.resident.properties.gain.OwnerBeforeLegislationStartForm._
+import models.resident.properties.gain.OwnerBeforeLegislationStartModel
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import uk.gov.hmrc.play.test.UnitSpec
 
 class OwnerBeforeLegislationStartFormSpec  extends UnitSpec with GuiceOneAppPerSuite {
 

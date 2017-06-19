@@ -16,12 +16,12 @@
 
 package views.resident.helpers
 
-import org.jsoup.Jsoup
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import views.html.helpers.resident.summaryNumericRowHelper
 import assets.MessageLookup.{Resident => commonMessages}
+import org.jsoup.Jsoup
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.i18n.Messages.Implicits._
+import uk.gov.hmrc.play.test.UnitSpec
+import views.html.helpers.resident.summaryNumericRowHelper
 
 class SummaryNumericRowHelperSpec extends UnitSpec with GuiceOneAppPerSuite {
 

@@ -21,7 +21,7 @@ import controllers.helpers.FakeRequestHelper
 import forms.resident.properties.ImprovementsForm._
 import models.resident.properties.ImprovementsModel
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 
 class ImprovementsFormSpec extends UnitSpec with GuiceOneAppPerSuite with FakeRequestHelper {
 

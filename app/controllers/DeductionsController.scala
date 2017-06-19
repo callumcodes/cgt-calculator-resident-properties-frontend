@@ -27,8 +27,8 @@ import forms.resident.properties.LettingsReliefValueForm._
 import forms.resident.properties.PrivateResidenceReliefForm._
 import forms.resident.properties.PrivateResidenceReliefValueForm._
 import forms.resident.properties.PropertyLivedInForm._
-import models.resident.properties._
 import models.resident._
+import models.resident.properties._
 import play.api.Play.current
 import play.api.data.Form
 import play.api.i18n.Messages

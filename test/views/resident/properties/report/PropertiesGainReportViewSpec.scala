@@ -17,18 +17,17 @@
 package views.resident.properties.report
 
 import assets.MessageLookup.Resident.{Properties => propertiesMessages}
-import assets.{MessageLookup => commonMessages}
 import assets.MessageLookup.{SummaryPage => messages}
+import assets.{MessageLookup => commonMessages}
 import common.Dates._
 import controllers.helpers.FakeRequestHelper
 import models.resident.TaxYearModel
 import models.resident.properties.YourAnswersSummaryModel
 import org.jsoup.Jsoup
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import views.html.calculation.resident.properties.{report => views}
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 class PropertiesGainReportViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

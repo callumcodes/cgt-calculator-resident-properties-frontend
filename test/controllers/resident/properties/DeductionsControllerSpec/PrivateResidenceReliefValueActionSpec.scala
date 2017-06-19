@@ -20,8 +20,8 @@ import assets.MessageLookup.{PrivateResidenceReliefValue => messages}
 import common.KeystoreKeys.{ResidentPropertyKeys => keystoreKeys}
 import config.AppConfig
 import connectors.CalculatorConnector
-import controllers.helpers.FakeRequestHelper
 import controllers.DeductionsController
+import controllers.helpers.FakeRequestHelper
 import models.resident.properties.{PrivateResidenceReliefValueModel, YourAnswersSummaryModel}
 import org.jsoup.Jsoup
 import org.mockito.ArgumentMatchers
@@ -30,7 +30,7 @@ import org.scalatest.mockito.MockitoSugar
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.test.Helpers._
 import uk.gov.hmrc.http.cache.client.CacheMap
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 
 import scala.concurrent.Future
 

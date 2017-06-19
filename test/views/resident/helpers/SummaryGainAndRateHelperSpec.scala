@@ -18,9 +18,9 @@ package views.resident.helpers
 
 import org.jsoup.Jsoup
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import views.html.helpers.resident.summaryGainAndRateHelper
 import play.api.i18n.Messages.Implicits._
+import uk.gov.hmrc.play.test.UnitSpec
+import views.html.helpers.resident.summaryGainAndRateHelper
 
 class SummaryGainAndRateHelperSpec extends UnitSpec with GuiceOneAppPerSuite {
 

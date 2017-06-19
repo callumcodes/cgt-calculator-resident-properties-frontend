@@ -16,16 +16,14 @@
 
 package views.resident
 
-import assets.MessageLookup.{OutsideTaxYears => messages}
-import assets.MessageLookup.{Resident => commonMessages}
+import assets.MessageLookup.{OutsideTaxYears => messages, Resident => commonMessages}
 import controllers.helpers.FakeRequestHelper
 import models.resident.TaxYearModel
 import org.jsoup.Jsoup
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import views.html.calculation.{resident => views}
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 class OutsideTaxYearsViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

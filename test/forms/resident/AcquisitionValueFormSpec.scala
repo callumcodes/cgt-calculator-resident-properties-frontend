@@ -16,11 +16,11 @@
 
 package forms.resident
 
-import models.resident.AcquisitionValueModel
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import forms.resident.AcquisitionValueForm._
 import assets.MessageLookup.{Resident => messages}
+import forms.resident.AcquisitionValueForm._
+import models.resident.AcquisitionValueModel
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import uk.gov.hmrc.play.test.UnitSpec
 
 class AcquisitionValueFormSpec extends UnitSpec with GuiceOneAppPerSuite {
 
