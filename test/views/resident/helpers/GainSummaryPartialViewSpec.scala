@@ -16,15 +16,15 @@
 
 package views.resident.helpers
 
+import assets.MessageLookup.{SummaryDetails => summaryMessages}
 import common.Dates
 import controllers.helpers.FakeRequestHelper
-import models.resident.properties.YourAnswersSummaryModel
 import models.resident._
+import models.resident.properties.YourAnswersSummaryModel
 import org.jsoup.Jsoup
 import play.api.Play.current
 import play.api.i18n.Messages.Implicits.applicationMessages
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import assets.MessageLookup.{SummaryDetails => summaryMessages}
 import views.html.{helpers => views}
 
 class GainSummaryPartialViewSpec extends UnitSpec with  WithFakeApplication with FakeRequestHelper

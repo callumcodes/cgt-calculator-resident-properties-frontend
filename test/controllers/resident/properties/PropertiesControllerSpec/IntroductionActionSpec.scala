@@ -17,13 +17,13 @@
 package controllers.PropertiesControllerSpec
 
 import assets.MessageLookup.{IntroductionView => messages}
-import controllers.helpers.FakeRequestHelper
 import controllers.PropertiesController
+import controllers.helpers.FakeRequestHelper
 import org.jsoup.Jsoup
 import org.scalatest.mock.MockitoSugar
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.test.Helpers._
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 
 class IntroductionActionSpec extends UnitSpec with GuiceOneAppPerSuite with MockitoSugar with FakeRequestHelper {
 

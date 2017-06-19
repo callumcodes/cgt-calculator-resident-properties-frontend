@@ -19,12 +19,12 @@ package forms.resident.properties
 import common.Transformers._
 import common.Validation._
 import models.resident.properties.PrivateResidenceReliefValueModel
+import play.api.Play.current
 import play.api.data.Forms._
 import play.api.data._
 import play.api.i18n.Messages
-import uk.gov.hmrc.play.views.helpers.MoneyPounds
 import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
+import uk.gov.hmrc.play.views.helpers.MoneyPounds
 
 object PrivateResidenceReliefValueForm {
 

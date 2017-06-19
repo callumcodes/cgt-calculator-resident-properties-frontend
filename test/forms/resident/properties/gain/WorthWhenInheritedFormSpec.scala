@@ -21,7 +21,7 @@ import controllers.helpers.FakeRequestHelper
 import forms.resident.WorthWhenInheritedForm._
 import models.resident.WorthWhenInheritedModel
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 
 class WorthWhenInheritedFormSpec extends UnitSpec with GuiceOneAppPerSuite with FakeRequestHelper {
 

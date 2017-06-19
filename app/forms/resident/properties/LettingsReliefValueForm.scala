@@ -16,15 +16,15 @@
 
 package forms.resident.properties
 
+import common.Constants._
 import common.Transformers._
 import common.Validation._
-import common.Constants._
+import models.resident.properties.LettingsReliefValueModel
+import play.api.Play.current
 import play.api.data.Forms._
 import play.api.data._
-import models.resident.properties.LettingsReliefValueModel
 import play.api.i18n.Messages
 import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 import scala.math._
 

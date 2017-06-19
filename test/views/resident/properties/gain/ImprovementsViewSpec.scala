@@ -20,10 +20,10 @@ import assets.MessageLookup.Resident.Properties.{ImprovementsView => messages}
 import controllers.helpers.FakeRequestHelper
 import forms.resident.properties.ImprovementsForm._
 import org.jsoup.Jsoup
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import views.html.calculation.resident.properties.{gain => views}
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 class ImprovementsViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

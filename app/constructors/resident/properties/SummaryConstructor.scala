@@ -18,10 +18,10 @@ package constructors.resident.properties
 
 import models.resident._
 import models.resident.properties._
-import play.api.i18n.Messages
-import uk.gov.hmrc.play.views.helpers.MoneyPounds
-import play.api.i18n.Messages.Implicits._
 import play.api.Play.current
+import play.api.i18n.Messages
+import play.api.i18n.Messages.Implicits._
+import uk.gov.hmrc.play.views.helpers.MoneyPounds
 
 import scala.math.BigDecimal.RoundingMode
 

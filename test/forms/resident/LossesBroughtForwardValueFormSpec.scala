@@ -18,10 +18,10 @@ package forms.resident
 
 import assets.MessageLookup.{Resident => messages}
 import controllers.helpers.FakeRequestHelper
-import models.resident.LossesBroughtForwardValueModel
 import forms.resident.LossesBroughtForwardValueForm._
+import models.resident.LossesBroughtForwardValueModel
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 
 class LossesBroughtForwardValueFormSpec extends UnitSpec with GuiceOneAppPerSuite with FakeRequestHelper {
 

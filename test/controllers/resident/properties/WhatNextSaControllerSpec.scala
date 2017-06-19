@@ -19,7 +19,7 @@ package controllers.resident.properties
 import java.time._
 
 import assets.MessageLookup
-import config.{AppConfig, ApplicationConfig}
+import config.AppConfig
 import connectors.CalculatorConnector
 import controllers.WhatNextSAController
 import controllers.helpers.FakeRequestHelper
@@ -28,8 +28,8 @@ import org.jsoup.Jsoup
 import org.mockito.ArgumentMatchers
 import org.mockito.Mockito._
 import org.scalatest.mock.MockitoSugar
-import play.api.test.Helpers._
 import org.scalatestplus.play.OneAppPerSuite
+import play.api.test.Helpers._
 import uk.gov.hmrc.play.test.UnitSpec
 
 import scala.concurrent.Future

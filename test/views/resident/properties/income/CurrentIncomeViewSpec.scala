@@ -16,17 +16,15 @@
 
 package views.resident.properties.income
 
-import assets.MessageLookup.{CurrentIncome => messages}
-import assets.MessageLookup.{Resident => commonMessages}
+import assets.MessageLookup.{CurrentIncome => messages, Resident => commonMessages}
 import controllers.helpers.FakeRequestHelper
 import forms.resident.income.CurrentIncomeForm._
 import models.resident.TaxYearModel
 import org.jsoup.Jsoup
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import views.html.calculation.resident.properties.{income => views}
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 class CurrentIncomeViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

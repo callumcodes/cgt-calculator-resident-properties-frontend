@@ -16,15 +16,14 @@
 
 package views.resident.properties.whatNext
 
-import controllers.helpers.FakeRequestHelper
-import org.jsoup.Jsoup
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import views.html.calculation.resident.properties.{whatNext => views}
 import assets.MessageLookup.WhatNextPages.{FourTimesAEA => pageMessages}
 import assets.MessageLookup.{WhatNextPages => commonMessages}
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import controllers.helpers.FakeRequestHelper
+import org.jsoup.Jsoup
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
+import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import views.html.calculation.resident.properties.{whatNext => views}
 
 class WhatNextSAFourTimesAEAViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

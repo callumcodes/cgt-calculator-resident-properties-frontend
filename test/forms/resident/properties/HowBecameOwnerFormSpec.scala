@@ -16,11 +16,11 @@
 
 package forms.resident.properties
 
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import assets.MessageLookup.{HowBecameOwner => messages}
 import forms.resident.properties.HowBecameOwnerForm._
 import models.resident.properties.HowBecameOwnerModel
-import assets.MessageLookup.{HowBecameOwner => messages}
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import uk.gov.hmrc.play.test.UnitSpec
 
 class HowBecameOwnerFormSpec extends UnitSpec with GuiceOneAppPerSuite {
 

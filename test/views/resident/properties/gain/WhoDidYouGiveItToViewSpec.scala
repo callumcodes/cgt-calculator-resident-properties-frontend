@@ -16,15 +16,14 @@
 
 package views.resident.properties.gain
 
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import views.html.calculation.resident.properties.{gain => views}
+import assets.MessageLookup.{Resident => commonMessages, WhoDidYouGiveItTo => messages}
 import controllers.helpers.FakeRequestHelper
 import forms.resident.properties.gain.WhoDidYouGiveItToForm._
 import org.jsoup.Jsoup
-import assets.MessageLookup.{WhoDidYouGiveItTo => messages}
-import assets.MessageLookup.{Resident => commonMessages}
-import play.api.i18n.Messages.Implicits._
 import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
+import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import views.html.calculation.resident.properties.{gain => views}
 
 class WhoDidYouGiveItToViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
   "Property Recipient view" should {

@@ -16,18 +16,16 @@
 
 package views.resident
 
-import assets.MessageLookup.{LossesBroughtForwardValue => messages}
-import assets.MessageLookup.{Resident => commonMessages}
+import assets.MessageLookup.{LossesBroughtForwardValue => messages, Resident => commonMessages}
 import controllers.helpers.FakeRequestHelper
+import controllers.routes
 import forms.resident.LossesBroughtForwardValueForm._
 import models.resident.TaxYearModel
 import org.jsoup.Jsoup
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import views.html.calculation.{resident => views}
-import controllers.routes
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 class LossesBroughtForwardValueViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

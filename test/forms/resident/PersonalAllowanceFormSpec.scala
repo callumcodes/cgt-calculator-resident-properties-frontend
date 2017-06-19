@@ -17,11 +17,11 @@
 package forms.resident
 
 import assets.MessageLookup.{Resident => messages}
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import forms.resident.income.PersonalAllowanceForm._
 import controllers.helpers.FakeRequestHelper
+import forms.resident.income.PersonalAllowanceForm._
 import models.resident.income.PersonalAllowanceModel
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import uk.gov.hmrc.play.test.UnitSpec
 import uk.gov.hmrc.play.views.helpers.MoneyPounds
 
 class PersonalAllowanceFormSpec extends UnitSpec with GuiceOneAppPerSuite with FakeRequestHelper {

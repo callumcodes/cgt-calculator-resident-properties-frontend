@@ -22,7 +22,7 @@ import controllers.helpers.FakeRequestHelper
 import forms.resident.properties.PrivateResidenceReliefValueForm._
 import models.resident.properties.PrivateResidenceReliefValueModel
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 
 class PrivateResidenceReliefValueFormSpec extends UnitSpec with GuiceOneAppPerSuite with FakeRequestHelper {
 

@@ -16,10 +16,10 @@
 
 package routes.properties
 
-import org.scalatest._
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import controllers.routes._
+import org.scalatest._
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import uk.gov.hmrc.play.test.UnitSpec
 
 class RoutesSpec extends UnitSpec with GuiceOneAppPerSuite with Matchers {
 

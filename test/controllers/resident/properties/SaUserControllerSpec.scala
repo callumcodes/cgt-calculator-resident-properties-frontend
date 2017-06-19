@@ -20,8 +20,8 @@ import assets.{MessageLookup, ModelsAsset}
 import connectors.CalculatorConnector
 import controllers.SaUserController
 import controllers.helpers.FakeRequestHelper
-import models.resident.{ChargeableGainResultModel, TotalGainAndTaxOwedModel}
 import models.resident.properties.YourAnswersSummaryModel
+import models.resident.{ChargeableGainResultModel, TotalGainAndTaxOwedModel}
 import org.jsoup.Jsoup
 import org.mockito.ArgumentMatchers
 import org.mockito.Mockito._

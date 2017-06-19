@@ -16,23 +16,21 @@
 
 package controllers.IncomeControllerSpec
 
-import assets.DateAsset
+import assets.MessageLookup.{PersonalAllowance => messages}
 import common.KeystoreKeys.{ResidentPropertyKeys => keystoreKeys}
 import connectors.CalculatorConnector
 import controllers.helpers.FakeRequestHelper
 import controllers.{IncomeController, routes}
+import models.resident.income.PersonalAllowanceModel
+import models.resident.{DisposalDateModel, TaxYearModel}
 import org.jsoup.Jsoup
 import org.mockito.ArgumentMatchers
-import org.scalatest.mock.MockitoSugar
 import org.mockito.Mockito._
-import play.api.test.Helpers._
-import assets.MessageLookup.{PersonalAllowance => messages}
-import common.Dates
-import models.resident.{DisposalDateModel, TaxYearModel}
-import models.resident.income.PersonalAllowanceModel
+import org.scalatest.mock.MockitoSugar
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import play.api.test.Helpers._
 import uk.gov.hmrc.http.cache.client.CacheMap
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 
 import scala.concurrent.Future
 

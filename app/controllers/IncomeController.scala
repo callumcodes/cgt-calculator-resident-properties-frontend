@@ -25,14 +25,14 @@ import forms.resident.income.CurrentIncomeForm._
 import forms.resident.income.PersonalAllowanceForm._
 import models.resident._
 import models.resident.income._
+import play.api.Play.current
 import play.api.data.Form
 import play.api.i18n.Messages
+import play.api.i18n.Messages.Implicits._
 import play.api.mvc.{Action, AnyContent, Result}
 import uk.gov.hmrc.play.http.HeaderCarrier
 import views.html.calculation.{resident => commonViews}
 import views.html.calculation.resident.properties.{income => views}
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 import scala.concurrent.Future
 

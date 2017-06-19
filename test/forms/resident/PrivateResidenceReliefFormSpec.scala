@@ -19,7 +19,7 @@ package forms.resident
 import assets.MessageLookup.{PrivateResidenceRelief => messages}
 import forms.resident.properties.PrivateResidenceReliefForm._
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 
 class PrivateResidenceReliefFormSpec extends UnitSpec with GuiceOneAppPerSuite {
 

@@ -18,13 +18,12 @@ package controllers
 
 import controllers.helpers.FakeRequestHelper
 import org.jsoup.Jsoup
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import play.api.Play.current
 import play.api.i18n.Messages
+import play.api.i18n.Messages.Implicits._
 import play.api.mvc.{Action, AnyContent}
 import play.api.test.FakeRequest
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 class TimeoutControllerSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 

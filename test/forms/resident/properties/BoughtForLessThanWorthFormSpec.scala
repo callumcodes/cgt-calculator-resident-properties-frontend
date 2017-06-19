@@ -19,7 +19,7 @@ package forms.resident
 import forms.resident.properties.BoughtForLessThanWorthForm._
 import models.resident.properties.BoughtForLessThanWorthModel
 import org.scalatestplus.play.guice.GuiceOneAppPerSuite
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 
 class BoughtForLessThanWorthFormSpec extends UnitSpec with GuiceOneAppPerSuite {
 

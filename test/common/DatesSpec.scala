@@ -16,10 +16,11 @@
 
 package common
 
-import uk.gov.hmrc.play.test.UnitSpec
 import java.time.LocalDate
+
 import common.Dates.formatter
 import play.api.libs.concurrent.Execution.Implicits._
+import uk.gov.hmrc.play.test.UnitSpec
 
 class DatesSpec extends UnitSpec {
 

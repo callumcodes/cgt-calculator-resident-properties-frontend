@@ -23,10 +23,10 @@ import controllers.predicates.ValidActiveSession
 import forms.resident.SaUserForm
 import models.resident._
 import models.resident.properties.{ChargeableGainAnswers, YourAnswersSummaryModel}
-import play.api.mvc.{Action, AnyContent, Result}
-import play.api.i18n.Messages.Implicits._
 import play.api.Play.current
 import play.api.data.Form
+import play.api.i18n.Messages.Implicits._
+import play.api.mvc.{Action, AnyContent, Result}
 import uk.gov.hmrc.play.http.HeaderCarrier
 
 import scala.concurrent.Future

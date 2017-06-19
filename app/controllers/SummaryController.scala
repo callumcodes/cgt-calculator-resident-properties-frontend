@@ -24,11 +24,11 @@ import connectors.CalculatorConnector
 import controllers.predicates.ValidActiveSession
 import models.resident._
 import models.resident.properties.{ChargeableGainAnswers, YourAnswersSummaryModel}
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
 import play.api.mvc.Result
 import uk.gov.hmrc.play.http.HeaderCarrier
 import views.html.calculation.resident.properties.{summary => views}
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
 
 import scala.concurrent.Future
 

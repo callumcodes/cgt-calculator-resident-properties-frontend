@@ -19,21 +19,17 @@ package views.resident
 
 import java.time.LocalDate
 
-import assets.MessageLookup.{Resident => commonMessages}
-import assets.MessageLookup.{PersonalAllowance => messages}
+import assets.MessageLookup.{PersonalAllowance => messages, Resident => commonMessages}
 import common.Dates
 import common.resident.JourneyKeys
 import controllers.helpers.FakeRequestHelper
 import forms.resident.income.PersonalAllowanceForm._
 import models.resident.TaxYearModel
 import org.jsoup.Jsoup
-import org.scalatestplus.play.guice.GuiceOneAppPerSuite
+import play.api.Play.current
+import play.api.i18n.Messages.Implicits._
 import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
 import views.html.calculation.{resident => views}
-import play.api.i18n.Messages.Implicits._
-import play.api.Play.current
-
-import scala.concurrent.Await
 
 class PersonalAllowanceViewSpec extends UnitSpec with WithFakeApplication with FakeRequestHelper {
 
